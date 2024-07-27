@@ -1,0 +1,142 @@
+/* CSS chung cho tất cả các thiết bị */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Thiết lập bảng header */
+table.header {
+    width: 100%;
+    height: 12vh; /* Sử dụng đơn vị tương đối */
+    border-collapse: collapse;
+}
+
+/* Động cơ chia đều hai bên */
+table.header td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    font-size: 22px;
+}
+
+/* Định dạng vùng hình ảnh logo */
+table.header .logo {
+    max-width: 100%;
+    max-height: 10vh; /* Sử dụng đơn vị tương đối */
+    display: block;
+    margin: 0 auto;
+    width: auto; /* Thay đổi kích thước tùy theo nội dung */
+    height: auto; /* Thay đổi kích thước tùy theo nội dung */
+}
+
+/* Thuộc tính menu */
+.menu {
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    width: 15vw; /* Sử dụng đơn vị tương đối */
+    height: 100%;
+    background-color: #00BF63;
+    font-size: 15px; /* Sử dụng đơn vị tương đối */
+    white-space: nowrap; /* Ngăn không cho văn bản xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+    text-overflow: ellipsis; /* Hiển thị dấu "..." nếu văn bản quá dài */
+}
+.user-name{
+    font-weight: bold;
+    text-align:center;
+    color:white;
+    padding: 1rem;
+    border-bottom-style: solid;
+    font-size: 1.3rem;
+}
+.value {
+    background-color: #00BF63;
+    border: none;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1rem;
+}
+.value-a {
+    background-color: #ffffff;
+    /* Màu trắng khi nút có lớp 'active' */
+    border: none;
+    padding: 1rem;
+    color: #00BF63;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.value:hover {
+    background-color: #ffffff;
+    color: #00BF63;
+    border-radius: 5px;
+}
+/*Nền hiển thị nội dung của menu*/
+.background {
+    background-color: white;
+    position: relative;
+    left: 15%;
+    height: 88.5%;
+    width: 85%;
+    overflow: auto;
+}
+.content{
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px; 
+}
+
+
+/*Thuộc tính footer */
+footer {
+    background-color: #d9d9d9;
+    font-family: Arial;
+    width: 100%;
+    height: 17%;
+    border-top: 1px solid #000;
+    position: absolute;
+    top: 100%;   
+}
+/* Định dạng cho cột thông tin */
+.infor {
+    flex: 1; /* Mở rộng để đầy kín container */
+    padding: 0 20px; /* Khoảng cách lề bên trong cột */
+    position: absolute;
+    top:5%;
+}
+/* Định dạng cho cột sinh viên */
+.sinhvien {
+    flex: 1; /* Mở rộng để đầy kín container */
+    padding: 0 20px; /* Khoảng cách lề bên trong cột */
+    position: absolute;
+    left: 45%;
+    top:5%;
+}
+/* Định dạng cho cột tài liệu tham khảo */
+.more {
+    flex: 1; /* Mở rộng để đầy kín container */
+    padding: 0 20px; /* Khoảng cách lề bên trong cột */
+    position: absolute;
+    right: 2%;
+    top:5%;
+}
+.more a {
+    text-decoration: none; /* Loại bỏ gạch chân ở liên kết */
+    color: #333; /* Màu chữ */
+    transition: color 0.3s; /* Hiệu ứng màu khi hover chuột */
+}
+.more a:hover {
+    color: #007bff; /* Màu chữ khi hover chuột */
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Module ESP32-Cam",
+        "info": "Esp32-Cam là một module dựa trên SoC ESP32 mạnh mẽ, được thiết kế để có thể gắn Module Camera để thực hiện các dự án với thu thập hình ảnh, stream video chất lượng trung bình, phù hợp cho một số dự án IoT về giám sát và theo dõi.",
+        "image": "../images/esp32.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Module ESP8266",
+        "info": "ESP8266 là một hệ thống trên chip (SoC). Bao gồm bộ vi điều khiển Tensilica L106 32-bit (MCU) và bộ thu phát Wi-Fi.",
+        "image": "../images/esp8266.jpg"
+    },
+    {
+        "id": 3,
+        "name": "DHT11",
+        "info": "Cảm biến đo nhiệt độ, độ ẩm",
+        "image": "../images/DHT11.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Soil Moisture Sensor",
+        "info": "Cảm biến đo độ ẩm đất",
+        "image": "../images/doamdat.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Rain Water Sensor",
+        "info": "Cảm biến báo mưa",
+        "image": "../images/mua.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Servo",
+        "info": "Động cơ servo",
+        "image": "../images/servo.jpg"
+    },
+    {
+        "id": 7,
+        "name": "LDR Light Sensor Module",
+        "info": "Cảm biến ánh sáng dùng quang trở",
+        "image": "../images/quangtro.jpg"
+    }
+]

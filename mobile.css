@@ -1,0 +1,389 @@
+/* CSS cho điện thoại di động 428x746*/
+@media screen and (max-width: 600px) {
+    /* Đặt các thuộc tính CSS dành cho điện thoại di động ở đây */
+    table.header{
+        height: 10%;
+    }
+    table.header td {
+        font-size: 12px;
+    }
+    table.header .logo {
+        max-height: 10vh;
+    }
+    .user-box {
+        width: 5rem;
+        height: 1rem;
+    }
+    .name {
+        font-size: 10px;
+        color: #000;
+        top: 12%;
+        right: 1%;
+    }
+    .avt-user {
+        display: none;
+    }
+    .user-box:hover{
+        background-color: #979797;
+    }
+    .menu {
+        width: 20%;
+        height: 95%;
+        top: 10%;
+        font-size: 3vw;
+    }
+    .mucluc{
+        font-size: 0.5rem;
+    }
+    .value{
+        font-size: 0.5rem;
+    }
+    .value.active {
+        font-size: 0.5rem;
+    }
+    .value:hover {
+        border-radius: 5px;
+    }
+    .background {
+        width: 80%;
+        height: 83%;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+    }
+    
+    /*Thuộc tính Nhiệt độ*/
+    .data_nhietdo{
+        width: 9rem;
+        height: 4rem;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .content_nhietdo{
+        font-size: 0.9rem;
+    }
+    .value_nhietdo{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    /*Thuộc tính Độ ẩm*/
+    .data_doam{
+        top: 90%;
+        left: 10%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_doam{
+        font-size: 0.9rem;
+    }
+    .value_doam{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    /*Thuộc tính Độ ẩm đất*/
+    .data_doamdat{
+        left: 170%;
+        top: 10%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_doamdat{
+        font-size: 0.9rem;
+    }
+    .value_doamdat{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    /*Thuộc tính bật tắt Máy bơm*/
+    .maybom{
+        top: 170%;
+        left: 10%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_maybom{
+        top: 35%;
+        left: 5%;
+        font-size: 1rem;
+    }
+    /*On-Off*/
+    .switch_maybom {
+        --circle-dim: 1em;
+        right: 4%;
+        bottom: 1.2rem;
+        width: 3.1em;
+        height: 1.5em;
+    }
+    
+    /*Thuộc tính Quạt gió*/
+    .quatgio{
+        top: 170%;
+        left: 170%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_quatgio{
+        top: 35%;
+        left: 5%;
+        font-size: 1rem;
+    }
+    /*On-Off*/
+    .switch_quatgio {
+        --circle-dim: 1em;
+        font-size: 17px;
+        right: 4%;
+        bottom: 1.2rem;
+        width: 3.1em;
+        height: 1.5em;
+    } 
+    
+    /*Thuộc tính LED 1*/
+    .led1{
+        top: 250%;
+        left: 10%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_led1{
+        top: 35%;
+        left: 5%;
+        font-size: 1rem;
+    }
+    /*On-Off*/
+    .switch_led1 {
+        --circle-dim: 1em;
+        right: 4%;
+        bottom: 1.2rem;
+        width: 3.1em;
+        height: 1.5em;
+    } 
+    
+    /*Thuộc tính LED 2*/
+    .led2{
+        top: 250%;
+        left: 170%;
+        width: 9rem;
+        height: 4rem;
+    }
+    .content_led2{
+        top: 35%;
+        left: 5%;
+        font-size: 1rem;
+    }
+    /*On-Off*/
+    .switch_led2 {
+        --circle-dim: 1em;
+        right: 4%;
+        bottom: 1.2rem;
+        width: 3.1em;
+        height: 1.5em;
+    }
+    /*Đồ thị chung*/
+    .linechart {
+        background-color: #f0f0f0;
+        width: 335px;
+        height: 175px;
+        position: relative;
+        top: 330%;
+        left: 0%;
+    }
+    .text-chart {
+        position: relative;
+        top: 20%;
+        left: 30%;
+        font-size: 15px;
+    }
+    /*Button xem video trực tiếp*/
+    .button_video {
+        padding-right: 20%;
+        font-size: 0.6rem;
+        border-radius: 0.7em;
+        top: 600%;
+        left: 230%;
+        height: 2em;
+    }
+    .button_video_content{
+        font-size: 0.7rem;
+        width: 5rem;
+    }
+    .button_video .icon {
+        margin-left: 1em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0.5em;
+        right: 0.3em;
+    } 
+    
+    /*Dữ liệu*/
+    .timkiem-back {
+        width: 320px;
+        height: 70px;
+        top: 10%;
+        left: 10%;
+    }
+    .h1-timkiem {
+        bottom: 60%;
+        padding: 10px;
+    }
+    #searchNhietDo, #searchDoAm, #searchDoAmDat {
+        width: 80px;
+        height: 20px;
+        border: solid 1.6px #000;
+        padding-left: 5px;
+        top: 30%;
+        left: 2%;
+        font-size: 10px;
+    }
+    #searchThoiGian {
+        width: 80px;
+        height: 20px;
+        border: solid 1.6px #000;
+        padding-left: 5px;
+        top: 26%;
+        left: 2%;
+        font-size: 8px;
+        color: black;
+    }
+    #searchNhietDo {
+        left: 11%;
+    }
+    #searchDoAm {
+        left: 19%;
+    }
+    #searchButton {
+        width: 65px;
+        height: 18px;
+        top: 31%;
+        left: 50%;
+        font-size: 10px;
+        color: #000;
+    }
+    .data-back {
+        width: 320px;
+        height: 500px;
+        top: 40%;
+        left: 10%;
+
+    }
+    .data-table {
+        width: 100%;
+        font-size: 10px;
+    }
+    .data-table td {
+        padding: 5px;
+    }
+
+    /*Phân tích*/
+    .dateRange {
+        width: 125px;
+        font-size: 13px;
+        top: 3%;
+        left: 3%;
+    }
+    #dateRange {
+        width: 60px;
+        height: 18px;
+        font-size: 13px;
+        top: 3%;
+        left: 125%;
+    }
+    .data-chart {
+        width: 325px;
+    }
+    #NhietDo {
+        position: absolute;
+        top: 20%;
+    }
+    #DoAmDat {
+        position: absolute;
+        top: 190%;
+        left: 0%;
+    }
+    #DoAmKK {
+        position: absolute;
+        top: 370%;
+    }
+
+    /*Thiết bị*/
+    .table-container {
+        width: 17rem;
+    }
+    .device-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .device-table td {
+        font-size: 0.5rem;
+        padding: 0.6rem;
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .anh{
+        width: 4rem;
+        height: 3.75rem;
+    }
+    /*Tài khoản*/
+    .login-back {
+        width: 225px;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+    }
+    .login {       
+        padding: 10px 24px 10px;
+        gap: 5px;
+    } 
+    .title-login {
+        font-size: 1rem;
+    }
+    .subtitle-login {
+        font-size: 0.8rem;
+    } 
+    #eye i {
+        position: absolute;
+        top: 60%;
+        right: 14%;
+    }
+    #infor-taikhoan {
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 21rem;
+        font-size: 0.7rem;
+    }
+    .button-logout {
+        width: 75px;
+        padding: 5px 8px;
+        font-size: 0.7rem;
+        top: 2100%;
+        left: 75%;
+    }
+    /*Footer*/
+    footer {
+        height: 20%;
+        top: 95%;
+    }
+    .infor {
+        padding: 0 6px;
+        width: 40%;
+        top: 5%;
+        font-size: 10px;
+    }
+    .sinhvien {
+        width: 20%;
+        padding: 0 20px;
+        left: 38%;
+        top: 5%;
+        font-size: 10px;
+    }
+    .more {
+        padding: 0 15px;
+        right: 0%;
+        top: 5%;
+        font-size: 10px;
+    }
+}
