@@ -1,7 +1,7 @@
 // Kiểm tra trạng thái đăng nhập
-if (!localStorage.getItem('loggedIn')) {
+/*if (!localStorage.getItem('loggedIn')) {
     window.location.href = '../login/login.html';
-}
+}*/
 
 document.addEventListener('DOMContentLoaded', function() {
     loadAccounts();
@@ -16,7 +16,7 @@ function loadAccounts() {
     fetch('../database/accounts.json')
         .then(response => response.json())
         .then(data => {
-            displayAccounts(data);
+            displayAccounts(data.users);
         })
         .catch(error => console.error('Error loading accounts:', error));
 }
@@ -34,7 +34,7 @@ function displayAccounts(accounts) {
             <td>${account.username}</td>
             <td>${account.phone}</td>
             <td>${account.email}</td>
-            <td  class="edit"><a href="control-panel.html?id=${account.id}">Edit</a></td>
+            <td class="edit"><a href="control-panel.html?id=${account.id}">Edit</a></td>
         `;
 
         accountList.appendChild(row);
@@ -50,7 +50,7 @@ function searchAccounts() {
     fetch('../database/accounts.json')
         .then(response => response.json())
         .then(data => {
-            const filteredAccounts = data.filter(account => {
+            const filteredAccounts = data.users.filter(account => { // Cập nhật để sử dụng thuộc tính 'users'
                 return (
                     account.fullName.toLowerCase().includes(fullName) &&
                     account.username.toLowerCase().includes(username) &&
