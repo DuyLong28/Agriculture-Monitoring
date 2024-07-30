@@ -16,7 +16,7 @@ function loadAccount(id) {
     fetch('../database/accounts.json')
         .then(response => response.json())
         .then(data => {
-            const account = data.find(acc => acc.id === parseInt(id));
+            const account = data.users.find(acc => acc.id === parseInt(id));
             if (account) {
                 document.getElementById('fullName').value = account.fullName;
                 document.getElementById('username').value = account.username;
@@ -41,15 +41,15 @@ function saveAccount() {
     fetch('../database/accounts.json')
         .then(response => response.json())
         .then(data => {
-            const index = data.findIndex(acc => acc.id === account.id);
+            const index = data.users.findIndex(acc => acc.id === account.id);
             if (index !== -1) {
-                data[index] = account;
+                data.users[index] = account;
             } else {
-                data.push(account);
+                data.users.push(account);
             }
 
-            // Save the updated data back to the JSON file (this requires a backend to handle the write operation)
-            // This part is just a simulation, you need a backend server to handle this in a real application.
+            // Lưu dữ liệu cập nhật lại vào tệp JSON (điều này cần backend để xử lý thao tác ghi)
+            // Phần này chỉ là mô phỏng, cần một server backend để xử lý trong ứng dụng thực tế.
             console.log('Account saved:', account);
         })
         .catch(error => console.error('Error saving account:', error));
@@ -61,10 +61,10 @@ function deleteAccount() {
     fetch('../database/accounts.json')
         .then(response => response.json())
         .then(data => {
-            const newData = data.filter(acc => acc.id !== accountId);
+            const newData = data.users.filter(acc => acc.id !== accountId);
 
-            // Save the updated data back to the JSON file (this requires a backend to handle the write operation)
-            // This part is just a simulation, you need a backend server to handle this in a real application.
+            // Lưu dữ liệu cập nhật lại vào tệp JSON (điều này cần backend để xử lý thao tác ghi)
+            // Phần này chỉ là mô phỏng, bạn cần một server backend để xử lý trong ứng dụng thực tế.
             console.log('Account deleted:', accountId);
         })
         .catch(error => console.error('Error deleting account:', error));
