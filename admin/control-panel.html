@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <title>Agriculture monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" >
+    <link rel="icon" href="data:">
+    <link rel="stylesheet" type="text/css" href="control-panel.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../mobile.css">
+    <script defer src="control-panel.js"></script>
+    <script defer src="../app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table class="header">
+            <tbody>
+                <td><img class="logo" src="../images/header.png"></td>
+                <td style="font-weight: bold;" class="title">HỆ THỐNG GIÁM SÁT NÔNG NGHIỆP THÔNG MINH BẰNG IOT</td>
+            </tbody>
+        </table>
+    </div>
+    <div class="menu">
+            <a class="user-name" id="userName"></a>
+            <button class="value" data-href="index.html">GIỚI THIỆU</button>
+            <button class="value" data-href="../dashboard/dashboard.html">GIÁM SÁT</button>
+            <button class="value" data-href="../analysis/analysis.html">PHÂN TÍCH</button>
+            <button class="value" data-href="../data/data.html">DỮ LIỆU</button>
+            <button class="value" data-href="../devices/devices.html">THIẾT BỊ</button>
+            <button class="value-a" data-href="../admin/admin.html" id="admin-menu" style="display: none;">QUẢN TRỊ VIÊN</button>
+            <button class="value" id="logout" >ĐĂNG XUẤT</button>
+    </div>
+    <div class="background">
+        <div class="title-control">Chỉnh sửa tài khoản</div>
+        <div class="form-container">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Họ tên:</label>
+                    <input type="text" id="fullName">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" readonly>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role">
+                        <option value="admin">Admin</option>
+                        <option value="staff">Staff</option>
+                        <option value="viewer">Guest</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <button onclick="saveAccount()">Lưu</button>
+                <button onclick="deleteAccount()">Xóa Tài Khoản</button>
+                <button onclick="goBack()">Quay lại</button>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -9,19 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../mobile.css">
     <script defer src="admin.js"></script>
     <script defer src="../app.js"></script>
-    <script>
-        // Kiểm tra trạng thái đăng nhập
-        if (!localStorage.getItem('loggedIn')) {
-            window.location.href = 'login/login.html';
-        }
-        // Hiển thị mục quản trị nếu là admin
-        if (localStorage.getItem('role') === 'admin') {
-            const adminMenu = document.getElementById('admin-menu');
-            if (adminMenu) {
-                adminMenu.style.display = 'block';
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -43,7 +30,29 @@
             <button class="value" id="logout" >ĐĂNG XUẤT</button>
     </div>
     <div class="background">
-        
+        <div class="title-admin">Danh sách tài khoản</div>
+        <div class="search-container">
+            <input type="text" id="search-fullname" placeholder="Họ tên">
+            <input type="text" id="search-username" placeholder="Username">
+            <input type="text" id="search-phone" placeholder="Số điện thoại">
+            <input type="text" id="search-email" placeholder="Email">
+            <button onclick="searchAccounts()">Tìm Kiếm</button>
+        </div>
+        <table class="list-user">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>Username</th>
+                    <th>Số điện thoại</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="account-list">
+                <!-- Nội dung sẽ được chèn từ JavaScript -->
+            </tbody>
+        </table>
     </div>
     <footer>
         <div class="footer">

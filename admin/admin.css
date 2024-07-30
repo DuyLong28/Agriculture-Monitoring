@@ -1,0 +1,58 @@
+.title-admin {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.list-user {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.edit {
+    text-align: center;
+
+}
+.edit a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.edit a:hover {
+    color: rgb(255, 0, 0);
+}
