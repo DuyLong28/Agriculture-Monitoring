@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Đặt sự kiện sau khi DOM đã sẵn sàng
-    $('#eye').click(function() {
+    $('.eye').click(function() {
         $(this).toggleClass('open');
         $(this).children('i').toggleClass('fa-eye-slash fa-eye');
         if ($(this).hasClass('open')) {
@@ -12,6 +12,14 @@ $(document).ready(function() {
 
     const formLogin = document.getElementById('form-login');
     const inputPassword = document.getElementById('password');
+    const rememberMeCheckbox = document.getElementById('rememberMe');
+
+    // Kiểm tra trạng thái đăng nhập khi tải trang
+    if (localStorage.getItem('rememberMe') === 'true') {
+        document.getElementById('username').value = localStorage.getItem('username');
+        document.getElementById('password').value = localStorage.getItem('password');
+        rememberMeCheckbox.checked = true;
+    }
 
     if (formLogin) {
         formLogin.addEventListener('submit', function(event) {
@@ -36,6 +44,7 @@ $(document).ready(function() {
         // Lấy giá trị từ input
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
+        const rememberMe = rememberMeCheckbox.checked;
 
         // Ẩn thông báo lỗi trước khi kiểm tra lại
         const errorMessage = document.getElementById('error-message');
@@ -59,7 +68,14 @@ $(document).ready(function() {
 
                 if (user) {
                     // Lưu trạng thái đăng nhập trong Local Storage
-                    localStorage.setItem('username', username);
+                    if (rememberMe) {
+                        localStorage.setItem('username', username);
+                        localStorage.setItem('password', password);
+                        localStorage.setItem('rememberMe', true);
+                    } else {
+                        sessionStorage.setItem('username', username);
+                        sessionStorage.setItem('password', password);
+                    }
                     localStorage.setItem('loggedIn', 'true');
                     localStorage.setItem('role', user.role);
                     // Chuyển hướng tới trang chính
@@ -77,6 +93,6 @@ $(document).ready(function() {
                     errorMessage.innerText = 'Có lỗi xảy ra. Vui lòng thử lại.';
                     errorMessage.style.display = 'block';
                 }
-            });
+        });
     }
 });

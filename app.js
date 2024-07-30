@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.removeItem('role');
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('password');
-    window.location.href = 'login.html';
+    window.location.href = '../login/login.html';
 });
 });
 
