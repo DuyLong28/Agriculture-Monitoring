@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <script defer src="app.js"></script>
+    <script>
+        // Kiểm tra trạng thái đăng nhập
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login/login.html';
+        }
+    </script>
 </head>
 <body>
     <div class="container">

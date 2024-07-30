@@ -1,8 +1,3 @@
-// Kiểm tra trạng thái đăng nhập
-if (!localStorage.getItem('loggedIn')) {
-    window.location.href = '../login/login.html';
-}
-
 //Cài đặt menu
 var activeButton = null;
 
@@ -41,12 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
           adminMenu.style.display = 'block';
       }
   }
-  // Xử lý sự kiện đăng xuất
+  // Xóa thông tin đăng nhập khi người dùng đăng xuất
   document.getElementById('logout').addEventListener('click', function() {
+    localStorage.removeItem('username');
+    localStorage.removeItem('password');
+    localStorage.removeItem('rememberMe');
     localStorage.removeItem('loggedIn');
     localStorage.removeItem('role');
-    localStorage.removeItem('username');
-    window.location.href = '../login/login.html';
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('password');
+    window.location.href = 'login.html';
 });
 });
 

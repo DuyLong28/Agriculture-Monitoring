@@ -1,6 +1,10 @@
 {
   "users": [
+<<<<<<< HEAD
   {
+=======
+    {
+>>>>>>> 9fc346b (update login.js)
       "id": 1,
       "fullName": "Admin",
       "username": "Admin",
@@ -8,8 +12,8 @@
       "phone": "0123456789",
       "email": "admin@example.com",
       "role": "admin"
-  },
-  {
+    },
+    {
       "id": 2,
       "fullName": "Staff",
       "username": "Staff",
@@ -17,6 +21,7 @@
       "phone": "0987654321",
       "email": "staff@example.com",
       "role": "staff"
+<<<<<<< HEAD
   },
   {
     "id": 3,
@@ -27,5 +32,17 @@
     "email": "guest@example.com",
     "role": "viewer"
   }
+=======
+    },
+    {
+      "id": 3,
+      "fullName": "Guest",
+      "username": "Guest",
+      "password": "123456",
+      "phone": "0987654321",
+      "email": "guest@example.com",
+      "role": "viewer"
+    }
+>>>>>>> 9fc346b (update login.js)
   ]
 }

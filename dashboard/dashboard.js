@@ -1,3 +1,8 @@
+// Kiểm tra trạng thái đăng nhập
+if (!localStorage.getItem('loggedIn')) {
+    window.location.href = '../login/login.html';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const role = localStorage.getItem('role');
     const lockMayBom = document.getElementById('lock-maybom');
