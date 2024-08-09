@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// Kiểm tra xem người dùng đã đăng nhập hay chưa
+if (!isset($_SESSION['loggedIn'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <html lang="en">
 <head>
     <title>Agriculture monitoring</title>
@@ -7,26 +16,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <script defer src="app.js"></script>
-    <script>
-        // Kiểm tra trạng thái đăng nhập
-        if (!localStorage.getItem('loggedIn')) {
-            window.location.href = 'login/login.html';
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('logout').addEventListener('click', function() {
-                localStorage.removeItem('username');
-                localStorage.removeItem('password');
-                localStorage.removeItem('rememberMe');
-                localStorage.removeItem('loggedIn');
-                localStorage.removeItem('role');
-                sessionStorage.removeItem('username');
-                sessionStorage.removeItem('password');
-                window.location.href = 'login/login.html';
-            });
-        });
-    </script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="loading"></div>
+    </div>
     <div class="container">
         <table class="header">
             <tbody>
@@ -36,13 +30,14 @@
         </table>
     </div>
     <div class="menu">
-            <a class="user-name" id="userName"></a>
-            <button class="value-a" data-href="index.html">GIỚI THIỆU</button>
-            <button class="value" data-href="dashboard/dashboard.html">GIÁM SÁT</button>
-            <button class="value" data-href="analysis/analysis.html">PHÂN TÍCH</button>
-            <button class="value" data-href="data/data.html">DỮ LIỆU</button>
-            <button class="value" data-href="devices/devices.html">THIẾT BỊ</button>
-            <button class="value" data-href="admin/admin.html" id="admin-menu" style="display: none;">QUẢN TRỊ VIÊN</button>
+            <a class="user-name" id="userFullname"></a>
+            <button class="value-a" data-href="/index.php">GIỚI THIỆU</button>
+            <button class="value" data-href="/dashboard.php">GIÁM SÁT</button>
+            <button class="value" data-href="/analysis.php">PHÂN TÍCH</button>
+            <button class="value" data-href="/data.php">DỮ LIỆU</button>
+            <button class="value" data-href="/devices.php">THIẾT BỊ</button>
+            <button class="value" data-href="/account.php">TÀI KHOẢN</button>
+            <button class="value" data-href="/admin.php" id="admin-menu" style="display: none">QUẢN TRỊ VIÊN</button>
             <button class="value" id="logout" >ĐĂNG XUẤT</button>
     </div>
     <div class="background">

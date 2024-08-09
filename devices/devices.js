@@ -1,12 +1,7 @@
-// Kiểm tra trạng thái đăng nhập
-if (!localStorage.getItem('loggedIn')) {
-    window.location.href = '../login/login.html';
-}
-
 document.addEventListener('DOMContentLoaded', loadDevices);
 
 function loadDevices() {
-    fetch('devices.json')
+    fetch('/devices/devices.json')
         .then(response => response.json())
         .then(data => {
             const tableBody = document.getElementById('deviceTableBody');

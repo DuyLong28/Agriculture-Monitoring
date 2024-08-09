@@ -1,33 +1,46 @@
+<?php
+session_start();
+
+// Kiểm tra xem người dùng đã đăng nhập hay chưa
+if (!isset($_SESSION['loggedIn'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <html lang="en">
 <head>
     <title>Agriculture monitoring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" >
     <link rel="icon" href="data:">
-    <link rel="stylesheet" type="text/css" href="dashboard.css">
-    <link rel="stylesheet" type="text/css" href="../styles.css">
-    <link rel="stylesheet" type="text/css" href="../mobile.css">
+    <link rel="stylesheet" type="text/css" href="/dashboard/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script defer src="dashboard.js"></script>
-    <script defer src="../app.js"></script>
+    <script defer src="/dashboard/dashboard.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="loading"></div>
+    </div>
     <div class="container">
         <table class="header">
             <tbody>
-                <td><img class="logo" src="../images/header.png"></td>  
+                <td><img class="logo" src="/images/header.png"></td>  
                 <td style="font-weight: bold;" class="title">HỆ THỐNG GIÁM SÁT NÔNG NGHIỆP THÔNG MINH BẰNG IOT</td>
             </tbody>
         </table>
     </div>
     <div class="menu">
-        <a class="user-name" id="userName"></a>
-        <button class="value" data-href="../index.html">GIỚI THIỆU</button>
-        <button class="value-a" data-href="dashboard.html">GIÁM SÁT</button>
-        <button class="value" data-href="../analysis/analysis.html">PHÂN TÍCH</button>
-        <button class="value" data-href="../datadata.html">DỮ LIỆU</button>
-        <button class="value" data-href="../devices/devices.html">THIẾT BỊ</button>
-        <button class="value" data-href="../admin/admin.html" id="admin-menu" style="display: none;">QUẢN TRỊ VIÊN</button>
+        <a class="user-name" id="userFullname"></a>
+        <button class="value" data-href="/index.php">GIỚI THIỆU</button>
+        <button class="value-a" data-href="/dashboard.php">GIÁM SÁT</button>
+        <button class="value" data-href="/analysis.php">PHÂN TÍCH</button>
+        <button class="value" data-href="/data.php">DỮ LIỆU</button>
+        <button class="value" data-href="/devices.php">THIẾT BỊ</button>
+        <button class="value" data-href="/account.php">TÀI KHOẢN</button>
+        <button class="value" data-href="/admin.php" id="admin-menu" style="display: none;">QUẢN TRỊ VIÊN</button>
         <button class="value" id="logout" >ĐĂNG XUẤT</button>
     </div>
     <div class="background">

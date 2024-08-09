@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/DuyLong28/utc-nongnghiep-IOT/issues"
   },
-  "homepage": "https://github.com/DuyLong28/utc-nongnghiep-IOT#readme"
+  "homepage": "https://github.com/DuyLong28/utc-nongnghiep-IOT#readme",
+  "dependencies": {
+    "build-web": "file:"
+  }
 }

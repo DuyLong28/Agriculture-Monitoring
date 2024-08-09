@@ -36,7 +36,7 @@
     width: calc(100% - 22px); /* Giảm chiều rộng để tránh tràn ra ngoài */
 }
 
-button {
+.save, .cancel, .edit, .go-back, .delete{
     padding: 10px 15px;
     font-size: 16px;
     border: none;
@@ -44,8 +44,9 @@ button {
     cursor: pointer;
     margin-right: 10px;
 }
-
-button:hover {
+.save:hover, .cancel:hover,
+.edit:hover, .go-back:hover,
+.delete:hover {
     background-color: #ddd;
 }
 

@@ -1,8 +1,3 @@
-// Kiểm tra trạng thái đăng nhập
-if (!localStorage.getItem('loggedIn')) {
-  window.location.href = '../login/login.html';
-}
-
 //Dữ liệu -----------------------------------------------------------------------------------------------------------------------------------
     // Biến toàn cục để lưu trữ giá trị nhiệt độ và độ ẩm
     let nhietDo = 28; // Giả sử nhiệt độ ban đầu là 28°C
