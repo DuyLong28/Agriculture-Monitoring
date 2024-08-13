@@ -31,13 +31,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         // Thêm đoạn mã JavaScript để lưu trạng thái loggedIn vào localStorage
         echo "<script>
                 localStorage.setItem('loggedIn', 'true');
-                window.location.href = '/index.php';
+                window.location.href = '/home.php';
             </script>";
         exit();
         // Đảm bảo không có đầu ra trước khi chuyển hướng
         ob_clean();
         session_write_close();
-        header("Location: /index.php");
+        header("Location: /home.php");
         exit();
     } else {
         // Chuyển hướng tới trang đăng nhập với thông báo lỗi

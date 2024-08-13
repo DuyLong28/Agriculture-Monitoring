@@ -18,26 +18,3 @@
     width: 8rem;
     height: 7.5rem;
 }
-#addDeviceForm {
-    display: none; /* Ẩn form theo mặc định */
-    margin: 20px 0;
-}
-#addDeviceForm label {
-    display: block;
-    margin: 5px 0;
-}
-#addDeviceForm input {
-    margin: 5px 0;
-}
-#addDevice {
-    text-align: center;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: #00BF63;
-    width: 7rem;
-    border-radius: 5px;
-    padding: 0.3rem;
-    position: absolute;
-    left: 69rem;
-    top: 71rem;
-}

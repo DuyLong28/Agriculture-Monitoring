@@ -13,10 +13,10 @@ if (!isset($_SESSION['loggedIn'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" >
     <link rel="icon" href="data:">
-    <link rel="stylesheet" type="text/css" href="/devices/devices.css">
+    <link rel="stylesheet" type="text/css" href="devices/devices.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
-    <script defer src="/devices/devices.js"></script>
+    <script defer src="devices/devices.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['loggedIn'])) {
     </div>
     <div class="menu">
         <a class="user-name" id="userFullname"></a>
-        <button class="value" data-href="/index.php">GIỚI THIỆU</button>
+        <button class="value" data-href="/home.php">GIỚI THIỆU</button>
         <button class="value" data-href="/dashboard.php">GIÁM SÁT</button>
         <button class="value" data-href="/analysis.php">PHÂN TÍCH</button>
         <button class="value" data-href="/data.php">DỮ LIỆU</button>
@@ -61,22 +61,6 @@ if (!isset($_SESSION['loggedIn'])) {
                     </tbody>
                 </table>
             </div> 
-            
-            <div id="addDevice">Thêm thiết bị</div>
-
-            <div id="addDeviceForm">
-                <h2>Nhập thông tin thiết bị mới</h2>
-                <label for="deviceName">Tên thiết bị:</label>
-                <input type="text" id="deviceName" name="deviceName" required>
-                
-                <label for="deviceInfo">Thông tin:</label>
-                <input type="text" id="deviceInfo" name="deviceInfo" required>
-                
-                <label for="deviceImage">Hình ảnh (URL):</label>
-                <input type="text" id="deviceImage" name="deviceImage" required>
-                
-                <button id="addDeviceButton">Thêm thiết bị</button>
-            </div>
         </div>
     </div>
     <footer>

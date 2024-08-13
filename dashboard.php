@@ -13,11 +13,11 @@ if (!isset($_SESSION['loggedIn'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" >
     <link rel="icon" href="data:">
-    <link rel="stylesheet" type="text/css" href="/dashboard/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="dashboard/dashboard.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script defer src="/dashboard/dashboard.js"></script>
+    <script defer src="dashboard/dashboard.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -34,7 +34,7 @@ if (!isset($_SESSION['loggedIn'])) {
     </div>
     <div class="menu">
         <a class="user-name" id="userFullname"></a>
-        <button class="value" data-href="/index.php">GIỚI THIỆU</button>
+        <button class="value" data-href="/home.php">GIỚI THIỆU</button>
         <button class="value-a" data-href="/dashboard.php">GIÁM SÁT</button>
         <button class="value" data-href="/analysis.php">PHÂN TÍCH</button>
         <button class="value" data-href="/data.php">DỮ LIỆU</button>

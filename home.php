@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedIn'])) {
     </div>
     <div class="menu">
             <a class="user-name" id="userFullname"></a>
-            <button class="value-a" data-href="/index.php">GIỚI THIỆU</button>
+            <button class="value-a" data-href="/home.php">GIỚI THIỆU</button>
             <button class="value" data-href="/dashboard.php">GIÁM SÁT</button>
             <button class="value" data-href="/analysis.php">PHÂN TÍCH</button>
             <button class="value" data-href="/data.php">DỮ LIỆU</button>

@@ -1,8 +1,8 @@
 <?php
-$servername = "pizero.local";
-$username = "admin";
-$password = "123456";
-$dbname = "users";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "accounts";
 
 // Tạo kết nối
 $conn = new mysqli($servername, $username, $password, $dbname);

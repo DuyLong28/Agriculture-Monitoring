@@ -13,10 +13,10 @@ if (!isset($_SESSION['loggedIn'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" >
     <link rel="icon" href="data:">
-    <link rel="stylesheet" type="text/css" href="/analysis/analysis.css">
+    <link rel="stylesheet" type="text/css" href="analysis/analysis.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
-    <script defer src="/analysis/analysis.js"></script>
+    <script defer src="analysis/analysis.js"></script>
     <script defer src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['loggedIn'])) {
     </div>
     <div class="menu">
         <a class="user-name" id="userFullname"></a>
-        <button class="value" data-href="/index.php">GIỚI THIỆU</button>
+        <button class="value" data-href="/home.php">GIỚI THIỆU</button>
         <button class="value" data-href="/dashboard.php">GIÁM SÁT</button>
         <button class="value-a" data-href="/analysis.php">PHÂN TÍCH</button>
         <button class="value" data-href="/data.php">DỮ LIỆU</button>

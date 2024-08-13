@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/login/reset.css">
-    <link rel="stylesheet" href="/login/forgot.css">
+    <link rel="stylesheet" href="login/reset.css">
+    <link rel="stylesheet" href="login/forgot.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <script src="/login/forgot.js"></script>
+    <script src="login/forgot.js"></script>
     <title>Forgot Password</title>
 </head>
 <body>

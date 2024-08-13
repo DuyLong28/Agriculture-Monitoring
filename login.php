@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/login/reset.css">
-    <link rel="stylesheet" href="/login/login.css">
+    <link rel="stylesheet" href="login/reset.css">
+    <link rel="stylesheet" href="login/login.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script defer src="/login/login.js"></script>
+    <script defer src="login/login.js"></script>
     <title>Login to Agriculture monitoring</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="loading"></div>
     </div>
     <div id="wrapper">
-        <form action="/database/act-login.php" method="post" id="form-login">
+        <form action="database/act-login.php" method="post" id="form-login">
             <h1 class="form-heading">Đăng nhập tài khoản</h1>
             <div class="form-group">
                 <i class="far fa-user"></i>
